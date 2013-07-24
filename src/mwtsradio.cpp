@@ -98,6 +98,7 @@ MwtsRadio::MwtsRadio()
 }
 bool MwtsRadio::ChangeMode(int mode)
 {
+	Q_UNUSED(mode);
 	MWTS_ENTER;
 	qWarning() << "Radio mode change not available due to missing ofono-qt";
 	return true;

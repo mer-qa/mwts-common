@@ -97,6 +97,8 @@ QAbstractSocket* MwtsSocket::CreateSocket(int a_iSocket)
 
 int MwtsSocket::Send( int bytes )
 {
+	Q_UNUSED(bytes);
+
 	MWTS_ENTER;
 	int sent = -1;
 	

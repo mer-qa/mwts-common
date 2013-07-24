@@ -31,6 +31,7 @@
 /** Changes radio access technology mode*/
 bool MwtsPsd::ChangeMode(int mode)
 {
+	Q_UNUSED(mode);
 	MWTS_ENTER;
 
 	qCritical() << "RAT functionality can not be used on MeeGo";
