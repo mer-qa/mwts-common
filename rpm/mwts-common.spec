@@ -13,7 +13,7 @@ Prefix:                 /usr
 Group:                  Development/Tools
 BuildRequires:          qt-devel, gcc-c++
 Requires:               libqtcore4, libqtgui4, procps
-Source:                 %{name}-%{version}.tar.gz
+Source0:                %{name}-%{version}.tar.gz
 
 %description
 Mwts-common is a common library for MWTS test assets. It provides tool for memory and cpu monitoring, logging and reporting results.
