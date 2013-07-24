@@ -34,6 +34,7 @@ bool MwtsPsd::ChangeMode(int mode)
 	MWTS_ENTER;
 
 	qCritical() << "RAT functionality can not be used on MeeGo";
+	return false;
 }
 
 bool MwtsPsd::Connect()
