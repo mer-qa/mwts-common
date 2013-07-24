@@ -82,8 +82,6 @@ void MwtsCpuMonitor::WriteResult()
 			{// empty line
 				continue;
 			}
-			int cpu_user=values.at(m_nUserIndex).toInt();
-            int cpu_sys=values.at(m_nSysIndex).toInt();
             int cpu_iowait=values.at(m_nIowaitIndex).toInt();
             int cpu_idle=values.at(m_nIdleIndex).toInt();
             int cpu_total=100-cpu_idle;
