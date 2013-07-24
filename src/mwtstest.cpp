@@ -28,7 +28,6 @@
 #include <MwtsCommon>
 #include "mwtsload.h"
 #include "mwtsthroughput.h"
-#include "test_module_api.h"
 
 #include <stdlib.h>
 #include <QDir>
@@ -100,16 +99,9 @@ QString MwtsTest::Name()
 
 /**
   Returns name of currently running test case
-  This works only with min 2009w40 and later
 */
 QString MwtsTest::CaseName()
 {
-	// fetch name from MIN
-	QString sName = QString(tm_get_caller_name());
-	if(sName!="")
-	{
-		return sName;
-	}
 	if(m_sCaseName=="") // if no name is set
 	{
 		return "noname";

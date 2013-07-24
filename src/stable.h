@@ -25,11 +25,6 @@
 
 /* INCLUDES */
 extern "C" {
-#include <test_module_api.h>
-#include <min_parser.h>
-#include <min_logger.h>
-#include <min_test_event_if.h>
-#include <min_ipc_mechanism.h>
 #include <math.h>
 }
 

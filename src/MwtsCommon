@@ -15,6 +15,5 @@
 #include "mwtsconfig.h"
 #include "mwtsmonitor.h"
 #include "mwtsglobal.h"
-#include "mwtsmin.h"
 
 #endif // #ifndef _INCLUDED_MWTS_COMMON

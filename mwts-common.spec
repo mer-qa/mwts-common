@@ -11,8 +11,8 @@ Version:                1.2.6
 Release:                %{release}
 Prefix:                 /usr
 Group:                  Development/Tools
-BuildRequires:          qt-devel, min-devel, min, gcc-c++
-Requires:               libqtcore4, libqtgui4, min, procps
+BuildRequires:          qt-devel, gcc-c++
+Requires:               libqtcore4, libqtgui4, procps
 Source:                 %{name}-%{version}.tar.gz
 
 %description
@@ -25,14 +25,6 @@ Group:                  Development/Tools
 Requires:               qt-devel, mwts-common
 %description            devel
 Development headers and libraries for mwts-common
-
-%package                tests
-Summary:                Mwts-common MIN files
-Prefix:                 /usr
-Group:                  Development/Tools
-Requires:               min, mwts-common
-%description            tests
-MIN test cases for mwts-common
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -48,20 +40,12 @@ make install INSTALL_ROOT=%{buildroot}
 %doc README COPYING DEPENDENCIES.png
 /usr/lib/libmwts-common.so.*
 /usr/bin/*.py
-/etc/min.d/min.conf
 
 %files devel
 %doc README COPYING DEPENDENCIES.png
 /usr/lib/libmwts-common.so
 /usr/include/MwtsCommon
 /usr/include/mwts*.h
-
-%files tests
-%doc README COPYING DEPENDENCIES.png
-/etc/min.d/*.min.conf
-/usr/lib/min/*.cfg
-/usr/lib/min/libmin-mwts-common.so*
-/usr/share/applications/*.desktop
 
 %post
 mkdir -p /var/log/tests

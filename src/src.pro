@@ -21,7 +21,6 @@ SOURCES += \
 	mwtstest.cpp \
 	mwtsresult.cpp \
 	mwtslog.cpp \
-	mwtsmin.cpp \
 	mwtsmeasure.cpp \
 	mwtsglobal.cpp \
 	mwtsconfig.cpp \
@@ -47,7 +46,6 @@ HEADERS += \
 	mwtstest.h \
 	mwtsresult.h \
 	mwtslog.h \
-	mwtsmin.h \
 	mwtsmeasure.h \
 	mwtsglobal.h \
 	mwtsconfig.h \
@@ -66,7 +64,6 @@ HEADERS += \
 	mwtsendurance.h \
 	stable.h
 
-LIBS += -lminutils -lmintmapi -lminevent
 target.path = /usr/lib
 INSTALLS += target
 HEADERS.version = Versions
