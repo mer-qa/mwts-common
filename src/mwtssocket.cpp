@@ -84,7 +84,7 @@ QAbstractSocket* MwtsSocket::CreateSocket(int a_iSocket)
 	{
 	    connect(m_pQSocket, SIGNAL (readyRead()), this, SLOT(readyRead()));
 		
-	    char* data = "Hello There";
+		const char* data = "Hello There";
 	    qDebug() << "do write ( Hello There )";
 	    qint64  written = m_pQSocket->write ( data );
 	    qDebug() << "write ( data, strlen(data) returned" << written;
@@ -106,7 +106,7 @@ int MwtsSocket::Send( int bytes )
 	
 	if (m_pQSocket)
 	{
-	    char* data = "Send data";
+		const char* data = "Send data";
 	    qDebug() << "do write ( Send data )";
 	    qint64  written = m_pQSocket->write ( data );
 	    qDebug() << "done  write ( Send data ) returned" << written;
