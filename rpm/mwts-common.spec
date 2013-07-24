@@ -30,7 +30,7 @@ Development headers and libraries for mwts-common
 %setup -q -n %{name}-%{version}
 
 %build
-qmake
+%qmake
 make
 
 %install
